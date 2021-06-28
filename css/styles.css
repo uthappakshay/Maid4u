@@ -318,3 +318,21 @@ color: #fff;
     font-size: 1.7rem;
   }
 }
+/* media */
+
+.media{
+display: flex;
+}
+.media__tittle{
+margin-top: 0;
+}
+.media__body{
+margin: 0 2rem;
+}
+.media__image{
+  margin-top: 1rem;
+}
+.media__icon{
+  width: 30px;
+  height: 30px;
+}
