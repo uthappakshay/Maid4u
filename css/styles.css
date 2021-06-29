@@ -224,6 +224,10 @@ fill: #fff;
   width: 100%;
   display: inline-block;
 }
+.btn--streched{
+  padding-left: 6rem;
+  padding-right: 6rem;
+}
 
 @media screen and (min-width: 1024px) {
   .btn {
@@ -406,7 +410,7 @@ content: close-quote;
 .testimonial__image{
   position: relative;
 }
-.testimonial__image > img {
+.testimonial__image >img {
   width: 100%;
 }
 .testimonial__image > .icon-container{
@@ -429,3 +433,36 @@ content: close-quote;
     margin-right: 0;
   }
 }
+/* callouts*/
+.callout{
+  padding:4rem;
+  border-radius: 5px;
+}
+.callout--primary{
+  background: var(--color-primary);
+  color: #fff;
+}
+.callout__heading{
+  color: #fff;
+  margin-top: 0;
+  font-size: 3rem;
+}
+.callout .btn{
+  justify-self: center;
+  align-self: center;
+}
+.callout--content{
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .callout .grid--1x2{
+    grid-template-columns: 1fr auto;
+  }
+  .callout--content{
+    text-align: left;
+  }
+  .callout .btn{
+    justify-self: start;
+    margin: 0 2rem;
+  }
+  }
