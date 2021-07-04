@@ -4,15 +4,342 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="Get the maid of your choice and at your convenience">
+    <meta property="og:title" content="Maid4U...">
+    <meta property="og:description" content="Hassle free procurment of housemaids">
+    <meta property="og:type" content="websites">
+    <meta property="og:image" content="https://www.maid4u.com">
+    <meta property="og:url" content="https://www.maid4u.com">
+    <title>Maid4U - Get your house chores done with just a click</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script src="https://kit.fontawesome.com/585b00054b.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <header>
+        <nav class="nav collapsible">
+            <a class="nav__brand" href="/"><img src="./images/logo.svg" alt=""></a>
+                <svg class="icon icon--white nav__toggler">
+                <use :href="images/sprite.svg#menu"></use>
+                </svg>
+                <ul class="list nav__list collapsible__content">
+                <li class="nav__item" ><a href="#">Register as Professional</a></li>
+                <li class="nav__item"> <a href="#">Services</a></li>
+                <li class="nav__item"><a href="#">Pricing</a></li>
+                <li  class="nav__item"><a href="#">Login/Register</a></li>
+                </ul>
+                </nav>
+    </header>
+    <section class="block block--dark block--skewed-left hero">
+        <div class="container grid grid--1x2">
+    <header class="block__header hero__content" data-aos="slide-right">
+    <h1 class="block__heading">Hire Pros for all of your Chores</h1>
+    <p class="hero__tagline">Get maid of your choice in 60 mins</p>
+    <a href="" class="btn btn--accent btn--streched">Get started</a>
+    </header>
+    <picture >
+    <source type="image/webp" srcset="./images/banner.webp 1x,./images/banner@2x.webp 2x">
+    <source type="image/png" srcset="./images/banner.png 1x,./images/banner@2x.png 2x">
+    <img class="hero__image" src="./images/banner@2x.png" alt="">
+    </picture>
+    </div>
+    </section>
+    <section class="block container block-domain" data-aos="slide-left">
+        <header class="block__header">
+            <h2>Get maids for as low as <span>&#8377;</span>2599 per month</h2>
+            <p>Chose from our vast pool of highly skilled professionals who can take care of all your household and office chores in a neat and timely manner </p>
+        </header>
+        <div class="input-group">
+            <input type="text" class="input" placeholder="Enter type of service here"/>
+            <button class="btn btn--accent"><svg class="icon icon--white">
+                <use :href="images/sprite.svg#search"></use>
+                </svg>Search</button>
+            </div>
+            <ul class="list block-domain__prices">
+                <li><span class="badge badge--secondary"><span>&#8377;</span>2599</span></li>
+                <li><span>&#8377;</span>2999</li>
+                <li><span>&#8377;</span>3999</li>
+                <li><span>&#8377;</span>4999</li>
+                <li><span>&#8377;</span>6999</li>
+                <li><span>&#8377;</span>9999</li>
+            </ul>
+        </section>
+        <section class="block container block-plans">
+            <div class="grid grid--1x3" data-aos="zoom-in">
+            <div class="plan">
+                <div class="card card--secondary">
+                <header class="card__header">
+                <h3 class="plan__name">Basic</h3>
+                <span class="plan__price">$2599</span>
+                <span class="plan__billing-cycle">/ month</span>
+                <span class="badge badge--secondary badge--small">10% Off</span>
+                <span class="plan__Description">One hour every alternate days</span>
+                </header>
+                <div class="card__body">
+                    <ul class="list list--tick">
+                        <li class="list__item">Sweeping</li>
+                        <li class="list__item">Dusting</li>
+                        <li class="list__item">Mopping</li>
+                    </ul>
+                    <button class="btn btn--outline btn--block">Buy Now</button>
+                </div>
+                </div>
+                </div>
+                <div class="plan plan--popular">
+                    <div class="card card--primary">
+                    <header class="card__header">
+                    <h3 class="plan__name">Bai Pack</h3>
+                    <span class="plan__price">$4999</span>
+                    <span class="plan__billing-cycle">/ month</span>
+                    <span class="badge badge--primary badge--small">10% Off</span>
+                    <span class="plan__Description">Complete household solution</span>
+                    </header>
+                    <div class="card__body">
+                        <ul class="list list--tick">
+                            <li class="list__item">Floor cleaning</li>
+                            <li class="list__item">Dishes</li>
+                            <li class="list__item">Washing clothes</li>
+                        </ul>
+                        <button class="btn btn--outline btn--block">Buy Now</button>
+                    </div>
+                    </div>
+                    </div>
+                    <div class="plan">
+                        <div class="card card--secondary">
+                        <header class="card__header">
+                        <h3 class="plan__name">Full Settlement</h3>
+                        <span class="plan__price">$9999</span>
+                        <span class="plan__billing-cycle">/ month</span>
+                        <span class="badge badge--secondary badge--small">10% Off</span>
+                        <span class="plan__Description">Stay home nannies</span>
+                        </header>
+                        <div class="card__body">
+                            <ul class="list list--tick">
+                                <li class="list__item">Complete household chorus</li>
+                                <li class="list__item">Cooking</li>
+                                <li class="list__item">Nanny</li>
+                            </ul>
+                            <button class="btn btn--outline btn--block">Buy Now</button>
+                        </div>
+                        </div>
+                        </div>
+            </div>
+            </section>
+            <section class="block container" data-aos="slide-up">
+                <header class="block__header"><h2>Custom choose your packs and choose the right pros</h2>
+                <p>Select the work type and time and pay only for the task done</p>
+            </header>
+                <article class="grid grid--1x2 feature">
+                    <div class="feature__content" data-aos="fade-right">
+                        <span class="icon-container">
+                            <svg class="icon icon--primary">
+                            <use :href="images/sprite.svg#easy"></use>
+                            </svg>
+                        </span>
+                        <h3 class="feature__heading">Super easy to Select</h3>
+                        <p>Swipe from the vast pool of maids and read their bios and rating and right swipe to select</p>
+                        <a href="#" class="link-arrow">Learn more<i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <picture data-aos="zoom-in-left">
+                        <source type="image/webp" srcset="./images/easy.webp 1x,./images/easy@2x.webp 2x">
+                        <source type="image/png" srcset="./images/easy.png 1x,./images/easy@2x.png 2x">
+                        <img class="feature__image" src="./images/easy@2x.png" alt="">
+                    </picture>
+                </article>
+                <article class="grid grid--1x2 feature">
+                    <div class="feature__content" data-aos="fade-up-left">
+                        <span class="icon-container">
+                            <svg class="icon icon--primary">
+                            <use :href="images/sprite.svg#computer"></use>
+                            </svg>
+                        </span>
+                        <h3 class="feature__heading">Fast delivery of Services</h3>
+                        <p>The maids are dispatched to the selected destination in 60mins or less</p>
+                        <a href="#" class="link-arrow">Learn more<i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <picture data-aos="zoom-in-left">
+                        <source type="image/webp" srcset="./images/fast.webp 1x,./images/fast@2x.webp 2x">
+                        <source type="image/png" srcset="./images/fast.png 1x,./images/fast@2x.png 2x">
+                        <img class="feature__image" src="./images/fast@2x.png" alt="">
+                    </picture>
+                </article>
+                <article class="grid grid--1x2 feature">
+                    <div class="feature__content" data-aos="fade-down">
+                        <span class="icon-container">
+                            <svg class="icon icon--primary">
+                            <use :href="images/sprite.svg#settings"></use>
+                            </svg>
+                        </span>
+                        <h3 class="feature__heading">Thoroughly verified professionals</h3>
+                        <p>Professionals are highly skilled and trained with proper police verification</p>
+                        <a href="#" class="link-arrow">Learn more<i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <picture data-aos="zoom-in-left">
+                        <source type="image/webp" srcset="./images/Wordpress.webp 1x,./images/Wordpress@2x.webp 2x">
+                        <source type="image/png" srcset="./images/Wordpress.png 1x,./images/Wordpress@2x.png 2x">
+                        <img class="feature__image" src="./images/Wordpress@2x.png" alt="">
+                    </picture>
+                </article>
+            </section>
+            <section class="block block--dark block--skewed-right block-showcase">
+                <header class="block__header" data-aos="fade-up-left">
+                <h2 >User-friendly Interface</h2>
+            </header>
+            <div class="container grid grid--1x2" data-aos="slide-right">
+                <picture class="block-showcase__image">
+                    <source type="image/webp" srcset="./images/ipad.webp 1x,./images/ipad@2x.webp 2x">
+                    <source type="image/png" srcset="./images/ipad.png 1x,./images/ipad@2x.png 2x">
+                    <img src="./images/ipad.png" alt="">
+                </picture>
+                <ul class="list">
+                    <li>
+                        <div class="media">
+                            <div class="media__image">
+                                <svg class="icon icon--primary">
+                                    <use :href="images/sprite.svg#snap"></use>
+                                    </svg>
+                            </div>
+                                <div class="media__body" data-aos="fade-up-right">
+                            <h3 class="media__tittle">Easy Swipe and Select Options</h3>
+                            <p>Check the bios and ratings of our professionals before booking them</p>
+                                </div>
+                            </div>
+                    </li>
+                    <li>
+                        <div class="media">
+                            <div class="media__image">
+                                <svg class="icon icon--primary">
+                                    <use :href="images/sprite.svg#growth"></use>
+                                    </svg>
+                            </div>
+                                <div class="media__body" data-aos="fade-up-right">
+                            <h3 class="media__tittle">Choose the time and destination as per your convenience</h3>
+                            <p>Hassle-free timeframe selection and prebooking for functions and events</p>
+                                </div>
+                            </div>
+                    </li>
+                    <li>
+                        <div class="media">
+                            <div class="media__image">
+                                <svg class="icon icon--primary">
+                                    <use :href="images/sprite.svg#wordpress"></use>
+                                    </svg>
+                            </div>
+                                <div class="media__body" data-aos="fade-up-right">
+                            <h3 class="media__tittle">Nanny and Daycare plans</h3>
+                            <p>Nannies that cater all your and your babies needs at yourstep so that you don't have to miss any important dates!</p>
+                                </div>
+                            </div>
+                    </li>
+                </ul>
+            </div>
+            </section>
+            <section class="block">
+                <header class="block__header" data-aos="zoom-in">
+                    <h2>What our customers are saying</h2>
+                    <p>Check out what our 10000+ users are saying about us</p>
+                </header>
+                <div class="container">
+                    <div class="card testimonial">
+                        <div class="grid grid--1x2" data-aos="zoom-in-up">
+                       <div class="testimonial__image"><img src="./images/testimonial.jpg" alt="A Happy customer">
+                           <span class="icon-container icon-container--accent">
+                               <svg class="icon icon--white icon--small">
+                               <use :href="images/sprite.svg#quotes"></use>
+                               </svg>
+                           </span>
+                           </div>
+                           <blockquote class="quote">
+                               <p class="quote__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere, reprehenderit. Ipsam magnam culpa, animi sed eligendi eum ea veritatis odit.</p>
+                               <footer>
+                                   <div class="media">
+                                       <div class="media__image">
+                                           <svg class="icon icon--primary quote__line">
+                                               <use :href="images/sprite.svg#line"></use>
+                                               </svg>
+                                       </div>
+                                           <div class="media__body">
+                                       <h3 class="media__tittle quote__author">Heng Pung Lee</h3>
+                                       <p class="quote__company">Retired Housewife</p>
+                                           </div>
+                                        </div>
+                               </footer>
+                            </blockquote>
+                                   
+                                   </div>
+                        </div>
+                </div>   
+                </section>
+                <div class="callout callout--primary">
+                    <div class="grid grid--1x2">
+                    <div class="callout__content">
+                        <h2 class="callout__heading">Ready to get started</h2>
+                        <p>Tired of running behind your maids. Get to Maid4U now!</p>
+                    </div>
+                <a href="#" class="btn btn--secondary btn--streched">Get Started</a>
+                    </div>
+                </div>
+                <footer class="block block--dark footer">
+                    <div class="container grid footer__sections">
+                        <section class="collapsible collapsible--expanded footer__section">
+                            <div class="collapsible__header">
+                                <h2 class="collapsible__heading footer__heading">Services</h2>
+                                    <svg class="icon icon--white collapsible__chevron">
+                                    <use :href="images/sprite.svg#chevron"></use>
+                                    </svg>
+                            </div>
+                                <div class="collapsible__content">
+                                    <ul class="list">
+                                        <li><a href="#">Maids</a></li>
+                                        <li><a href="#">Nannies</a></li>
+                                        <li><a href="#">Cooks</a></li>
+                                    </ul>
+                                </div>
+                            </section>
+                        <section class="collapsible footer__section">
+                            <div class="collapsible__header">
+                                <h2 class="collapsible__heading footer__heading">Location</h2>
+                                    <svg class="icon icon--white collapsible__chevron">
+                                    <use :href="images/sprite.svg#chevron"></use>
+                                    </svg>
+                            </div>
+                                <div class="collapsible__content">
+                                    <ul class="list">
+                                        <li><a href="#">Bangalore</a></li>
+                                        <li><a href="#">Mumbai</a></li>
+                                        <li><a href="#">New Delhi</a></li>
+                                    </ul>
+                                </div>
+                       </section>
+                       <section class="collapsible footer__section">
+                        <div class="collapsible__header">
+                            <h2 class="collapsible__heading footer__heading">About Us</h2>
+                                <svg class="icon icon--white collapsible__chevron">
+                                <use :href="images/sprite.svg#chevron"></use>
+                                </svg>
+                        </div>
+                            <div class="collapsible__content">
+                                <ul class="list">
+                                    <li><a href="#">Careers</a></li>
+                                    <li><a href="#">Terms and Conditions</a></li>
+                                    <li><a href="#">Privacy policy</a></li>
+                                </ul>
+                            </div>
+                        </section>
+                        <div class="footer__brand">
+                            <img src="./images/logo.svg" alt="">
+                            <p class="footer__copyight">Copyright © 2021 Akshay Uthappa</p>
+                        </div>
+                    </div>
+                </footer>
 <script src="./js/main.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 </body>
 </html>
